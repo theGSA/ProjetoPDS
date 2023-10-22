@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/css/Menu.css" rel="stylesheet">
+    <script type="text/javascript" src="/js/ImportHtml.js"></script> 
+</head>
+<body>
+    <div class="container-menu">
+        <div class="container-menu-itens">
+            <aside class="container-menu-categorias fixed-position">
+                <img class="container-img-logo" src="/img/logo.png" alt="logo da loja">
+                <h2>Categoria dos pedidos</h2>
+                <div class="container-categorias">
+                    <i>Bebidas</i>
+                    <i>Pizzas</i>
+                    <i>Pasteis</i>
+                    <i>Salgados</i>
+                    <i>Batata-frita</i>
+                </div>
+            </aside>
+            <div id="ContainerHeaderInfoCategorias" class="container-header-info-categorias">
+                <div id="ContainerHeader"></div>
+                <script type="text/javascript">
+                    const element =  document.querySelector('#ContainerHeader');
+                    ImportHtml( element, '/Views/Components/HeaderProdutos.html')
+                 </script>
+                <article class="container-menu-produtos">
+                    <h2>Nome da categoria</h2>
+                    <div id="ContainerItens" class="container-itens"></div>
+                    <script type="text/javascript">
+                        let element2 =  document.querySelector(`#ContainerItens`);
+                       ImportHtml( element2, '/Views/Components/CardProduto.html')
+                    </script>
+                </article>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

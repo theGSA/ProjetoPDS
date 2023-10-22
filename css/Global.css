@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif !important;
+   
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+i{
+    color: orangered;
+}
